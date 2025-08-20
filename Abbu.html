@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomar Abbu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 200%; height: 200%;
+      background-image: linear-gradient(#00ffcc 1px, transparent 1px), 
+                        linear-gradient(90deg, #00ffcc 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.08;
+      animation: moveGrid 15s linear infinite;
+    }
+
+    @keyframes moveGrid {
+      from { transform: translate(0,0); }
+      to { transform: translate(-40px,-40px); }
+    }
+
+
+    .symbols {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .symbols span {
+      position: absolute;
+      color: #00ffcc;
+      font-size: 16px;
+      opacity: 0.1;
+      animation: float 10s linear infinite;
+    }
+    @keyframes float {
+      from { transform: translateY(100vh); opacity: 0.1; }
+      to { transform: translateY(-10vh); opacity: 0.6; }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc; }
+      to { text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 80px #00ffcc; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+
+    @media (max-width: 768px) { h1 { font-size: 2rem; } }
+    @media (max-width: 480px) { h1 { font-size: 1.4rem; } }
+
+.text-container {
+  display: flex;
+  flex-direction: column;   
+  justify-content: center; 
+  align-items: center;     
+  z-index: 2;              
+}
+
+ 
+    h1 {
+      font-size: 3rem;
+      color: #00ffcc;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      text-align: center;
+      z-index: 2;
+      animation: glow 2s ease-in-out infinite alternate, bounce 4s infinite;
+    }
+h2 {
+  font-size: 1.5rem;
+  color: #00d4ff;
+  text-align: center;
+  margin-top: 10px;  
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.description {
+  font-size: 1rem;        
+  color: #ffffff;            
+  text-align: center;
+  margin-top: 15px;          
+  max-width: 80%;            
+  line-height: 1.5;
+}
+
+  </style>
+</head>
+<body>
+  <div class="symbols">
+
+    <span style="left:10%">$</span>
+    <span style="left:25%">#</span>
+    <span style="left:40%">%</span>
+    <span style="left:55%">&</span>
+    <span style="left:70%">@</span>
+    <span style="left:85%">*</span>
+    <span style="left:15%">0</span>
+    <span style="left:35%">1</span>
+    <span style="left:60%">X</span>
+    <span style="left:80%">?</span>
+  </div>
+<div class="text-container">
+  <h1>Tomar Abbu</h1>
+  <h2>Ami tumar abbu Alaric Hawke, Chinso?</h2>
+  <p class="description">Ekhane ki dekhte ascho?</p>
+</div>
+</body>
+</html>
