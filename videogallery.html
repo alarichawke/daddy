@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<title>আমার ভিডিও গ্যালারি</title>
+<style>
+:root {
+--bg: #0b0c10;
+--panel: #111319;
+--text: #e9eef4;
+--muted: #a9b3c1;
+--accent: #6aa6ff;
+--radius: 18px;
+--shadow: 0 6px 24px rgba(0,0,0,.35);
+}
+body {
+margin: 0;
+font-family: sans-serif;
+background: var(--bg);
+color: var(--text);
+}
+.wrapper { max-width: 1200px; margin: 0 auto; padding: 32px 16px; }
+h1 { font-size: 32px; margin: 0 0 16px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 16px; }
+.video-card { background: var(--panel); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform .2s; }
+.video-card:hover { transform: translateY(-2px); }
+.video-thumb { display:block; text-decoration:none; color:inherit; }
+.video-wrap { aspect-ratio:16/9; background:#000; }
+.video-wrap img { width:100%; height:100%; object-fit:cover; display:block; }
+.meta { padding: 12px 14px; }
+.title { font-weight:bold; font-size:16px; margin-bottom:4px; }
+.caption { font-size:14px; color:var(--muted); margin-bottom:6px; }
+.date { font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrapper">
+<h1>ভিডিও গ্যালারি</h1>
+<main class="gallery">
+<!-- প্রতিটি ভিডিও কার্ড আলাদা পেইজে লিঙ্ক করবে -->
+<article class="video-card">
+<a href="video1.html" class="video-thumb">
+<div class="video-wrap">
+<img src="thumb1.jpg" alt="৭ বছর জেল খাটা ক্রিমিনাল ড. মজিবুল হকের গুরু ও ব্যবসায়িক পার্টনার।" />
+</div>
+<div class="meta">
+<div class="title">৭ বছর জেল খাটা ক্রিমিনাল ড. মজিবুল হকের গুরু ও ব্যবসায়িক পার্টনার।</div>
+<div class="date">আপলোড: <time datetime="2021-08-15">১৫ আগস্ট, ২০২১</time></div>
+</div>
+</a>
+</article>
+
+
+<article class="video-card">
+<a href="video2.html" class="video-thumb">
+<div class="video-wrap">
+<img src="thumb2.jpg" alt="আমেরিকায় ধরা খেলো 5star বাটপার ড. মজিবুল হক। Dr. Mojibul Haque ভুয়া ডাক্তার" />
+</div>
+<div class="meta">
+<div class="title">আমেরিকায় ধরা খেলো 5star বাটপার ড. মজিবুল হক। Dr. Mojibul Haque ভুয়া ডাক্তার</div>
+<div class="date">আপলোড: <time datetime="2021-08-10">১০ আগস্ট, ২০২১</time></div>
+</div>
+</a>
+</article>
+
+
+<article class="video-card">
+<a href="video3.html" class="video-thumb">
+<div class="video-wrap">
+<img src="thumb3.jpg" alt="প্রতারক ড. মজিবুল হক মিডিয়াকে কিনে নিয়েছে: কেউ তার ব্যাপারে কথা বলে না। Dr. Mojibul Haque" />
+</div>
+<div class="meta">
+<div class="title">প্রতারক ড. মজিবুল হক মিডিয়াকে কিনে নিয়েছে: কেউ তার ব্যাপারে কথা বলে না। Dr. Mojibul Haque</div>
+<div class="date">আপলোড: <time datetime="2021-07-28">২৮ জুলাই, ২০২১</time></div>
+</div>
+</a>
+</article>
+</main>
+</div>
+</body>
+</html>
