@@ -227,4 +227,29 @@
             <h2>Trademark Details</h2>
             <table class="details-table">
               <tr><th>Brand Mark</th><td>SONA DEY</td></tr>
-              <tr><th>Owner (
+              <tr><th>Owner (商標権者)</th><td>アラリック・ホーク (ALARIC HAWKE), President</td></tr>
+              <tr><th>Reg. No. (登録番号)</th><td>6220913</td></tr>
+              <tr><th>App. No. (出願番号)</th><td>2019-017267</td></tr>
+              <tr><th>Class (区分)</th><td>39 — Transportation & related services.</td></tr>
+              <tr><th>Status (状態)</th><td>Registered (登録済み)</td></tr>
+              <tr><th>Authority (発行機関)</th><td>Japan Patent Office (JPO)</td></tr>
+              <tr><th>Filing Date (出願日)</th><td>January 28, 2019</td></tr>
+              <tr><th>Reg. Date (登録日)</th><td>January 30, 2020</td></tr>
+              <tr><th>Validity (有効期間)</th><td>Until January 30, 2030 (Renewable)</td></tr>
+            </table>
+          </section>
+        </div>
+      </main>
+      <footer class="card-footer">
+        © <span id="yr"></span> SONA DEY — All Rights Reserved · Last updated: <span id="updated"></span>
+      </footer>
+    </div>
+  </div>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const today = new Date();
+    const formattedDate = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
+    document.getElementById('updated').textContent = formattedDate;
+  </script>
+</body>
+</html>
