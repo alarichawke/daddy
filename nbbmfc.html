@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBBMFC - North Bengal Band Music Fans Community Blog</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="উত্তরবঙ্গের ব্যান্ড সঙ্গীত, কনসার্ট, লোকাল ব্যান্ড এবং সঙ্গীত সংস্কৃতি নিয়ে সবচেয়ে বড় বাংলা ব্লগ">
+    <meta name="keywords" content="ব্যান্ড সঙ্গীত, উত্তরবঙ্গ, NBBMFC, বাংলা রক, কনসার্ট, লোকাল ব্যান্ড">
+    <meta name="author" content="NBBMFC">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="NBBMFC - উত্তরবঙ্গ ব্যান্ড সঙ্গীত ব্লগ">
+    <meta property="og:description" content="ব্যান্ড সঙ্গীত প্রেমীদের জন্য সব আপডেট, খবর এবং তথ্য">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo55.jpg">
+    <meta property="fb:page_id" content="100063758481314">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --accent-color: #ec4899;
+            --dark: #1f2937;
+            --darker: #111827;
+            --light: #f9fafb;
+            --gray: #6b7280;
+            --border: #e5e7eb;
+            --success: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans Bengali', sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background: #ffffff;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--darker);
+            color: white;
+            padding: 0.7rem 0;
+            font-size: 0.875rem;
+        }
+
+        .top-bar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-links a {
+            color: white;
+            margin-left: 1rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            padding: 0.5rem 2.5rem 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            outline: none;
+            width: 200px;
+            transition: width 0.3s;
+        }
+
+        .search-box input:focus {
+            width: 250px;
+            border-color: var(--primary-color);
+        }
+
+        .search-box i {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Featured Section */
+        .featured {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .featured-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .featured-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .featured h1 {
+            font-family: 'Playfair Display', 'Noto Sans Bengali', serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .featured p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+
+        .featured-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .btn-read {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-read:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 3rem;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            gap: 2.5rem;
+        }
+
+        /* Blog Card */
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 1.5rem;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .blog-body {
+            padding: 1.5rem 1.5rem 1.5rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .blog-category {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+            width: fit-content;
+        }
+
+        .blog-title {
+            font-family: 'Playfair Display', 'Noto Sans Bengali', serif;
+            font-size: 1.75rem;
+            color: var(--darker);
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+            font-weight: 700;
+        }
+
+        .blog-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .blog-title a:hover {
+            color: var(--primary-color);
+        }
+
+        .blog-excerpt {
+            color: var(--gray);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .blog-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .blog-author {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 0.875rem;
+        }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .blog-date {
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .widget {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .widget-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--darker);
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+
+        .widget-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+
+        /* About Widget */
+        .about-widget {
+            text-align: center;
+        }
+
+        .about-widget img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+
+        /* Categories Widget */
+        .category-list {
+            list-style: none;
+        }
+
+        .category-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-list li:last-child {
+            border-bottom: none;
+        }
+
+        .category-list a {
+            color: var(--dark);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .category-list a:hover {
+            color: var(--primary-color);
+        }
+
+        .category-count {
+            background: var(--light);
+            padding: 0.2rem 0.6rem;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+
+        /* Recent Posts Widget */
+        .recent-post {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .recent-post:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .recent-thumb {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .recent-info h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .recent-info h4 a {
+            color: var(--dark);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .recent-info h4 a:hover {
+            color: var(--primary-color);
+        }
+
+        .recent-info span {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        /* Tags Widget */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--light);
+            border-radius: 20px;
+            color: var(--dark);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+        }
+
+        .tag:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Newsletter Widget */
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .newsletter-form input {
+            padding: 0.8rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .newsletter-form input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .btn-subscribe {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .btn-subscribe:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--darker);
+            color: white;
+            padding: 3rem 1rem 1.5rem;
+            margin-top: 5rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .footer-social a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-card {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-image {
+                height: 250px;
+            }
+
+            .sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 71px;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+                padding: 2rem 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .search-box {
+                display: none;
+            }
+
+            .featured h1 {
+                font-size: 2rem;
+            }
+
+            .featured p {
+                font-size: 1rem;
+            }
+
+            .featured-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .blog-title {
+                font-size: 1.4rem;
+            }
+
+            .top-bar-content {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div>📧 contact@nbbmfc.com | ☎️ +880 1XXX-XXXXXX</div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100063758481314" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <!-- আপনার Logo এখানে Replace করবেন -->
+                <img src="logo55.jpg" alt="NBBMFC Logo">
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#"><i class="fas fa-home"></i> হোম</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> ব্লগ</a></li>
+                <li><a href="#"><i class="fas fa-calendar"></i> ইভেন্ট</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> কমিউনিটি</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> যোগাযোগ</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Featured Post -->
+    <section class="featured">
+        <div class="featured-content">
+            <div class="featured-badge">⭐ বিশেষ প্রতিবেদন</div>
+            <h1>উত্তরবঙ্গের ব্যান্ড সঙ্গীত: অতীত থেকে বর্তমান</h1>
+            <p>তিন দশকের যাত্রায় কিভাবে উত্তরবঙ্গের ব্যান্ড সঙ্গীত হয়ে উঠেছে যুব সংস্কৃতির প্রাণকেন্দ্র</p>
+            <div class="featured-meta">
+                <span><i class="far fa-user"></i> NBBMFC টিম</span>
+                <span><i class="far fa-calendar"></i> ২৫ জানুয়ারি, ২০২৪</span>
+                <span><i class="far fa-clock"></i> ১০ মিনিট পড়া</span>
+            </div>
+            <a href="#" class="btn-read">সম্পূর্ণ পড়ুন <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Blog Grid -->
+        <main class="blog-grid">
+
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+                <div class="blog-image">🎸</div>
+                <div class="blog-body">
+                    <span class="blog-category">ব্যান্ড গাইড</span>
+                    <h2 class="blog-title">
+                        <a href="#">লোকাল ব্যান্ডগুলোকে কিভাবে সাপোর্ট করবেন?</a>
+                    </h2>
+                    <p class="blog-excerpt">
+                        লোকাল ব্যান্ডগুলো আমাদের নিজস্ব সাংস্কৃতিক ঐতিহ্যের অংশ। কিন্তু অনেক প্রতিভাবান ব্যান্ড সঠিক সাপোর্ট না পেয়ে হারিয়ে যায়। জানুন কিভা���ে আপনি আপনার এলাকার ব্যান্ডগুলোকে সাহায্য করতে পারেন...
+                    </p>
+                    <div class="blog-footer">
+                        <div class="blog-author">
+                            <div class="author-avatar">N</div>
+                            <div>
+                                <div style="font-weight: 600;">NBBMFC</div>
+                                <div class="blog-date">২০ জানুয়ারি, ২০২৪</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--gray); font-size: 0.875rem;">
+                            <i class="far fa-clock"></i> ৫ মিনিট
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+                <div class="blog-image">🎤</div>
+                <div class="blog-body">
+                    <span class="blog-category" style="background: var(--accent-color);">ইভেন্ট</span>
+                    <h2 class="blog-title">
+                        <a href="#">২০২৪ সালে উত্তরবঙ্গে আসছে যেসব কনসার্ট</a>
+                    </h2>
+                    <p class="blog-excerpt">
+                        নতুন বছরে উত্তরবঙ্গের সঙ্গীত প্রেমীদের জন্য রয়েছে দুর্দান্ত সব কনসার্টের আয়োজন। রংপুরে হবে "রক ফেস্ট ২০২৪", দিনাজপুরে "ব্যান্ড মহোৎসব"। এই পোস্টে পাবেন সব কনসার্টের তারিখ, ভেন্যু এবং টিকিট সংক্রান্ত তথ্য...
+                    </p>
+                    <div class="blog-footer">
+                        <div class="blog-author">
+                            <div class="author-avatar">A</div>
+                            <div>
+                                <div style="font-weight: 600;">আরিফ হোসেন</div>
+                                <div class="blog-date">১৫ জানুয়ারি, ২০২৪</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--gray); font-size: 0.875rem;">
+                            <i class="far fa-clock"></i> ৭ মিনিট
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card">
+                <div class="blog-image">🥁</div>
+                <div class="blog-body">
+                    <span class="blog-category" style="background: var(--success);">টিউটোরিয়াল</span>
+                    <h2 class="blog-title">
+                        <a href="#">নিজের ব্যান্ড শুরু করতে চান? জেনে নিন কিছু টিপস</a>
+                    </h2>
+                    <p class="blog-excerpt">
+                        ব্যান্ড করার স্বপ্ন দেখেন অনেকেই, কিন্তু কোথা থেকে শুরু করবেন বুঝতে পারেন না। প্রথমেই দরকার সমমনা বন্ধুদের একটি টিম। তারপর নিয়মিত প্র্যাকটিস, অরিজিনাল গান তৈরি। এই পোস্টে পাবেন বিস্তারিত গাইডলাইন...
+                    </p>
+                    <div class="blog-footer">
+                        <div class="blog-author">
+                            <div class="author-avatar">S</div>
+                            <div>
+                                <div style="font-weight: 600;">সাকিব রহমান</div>
+                                <div class="blog-date">১০ জানুয়ারি, ২০২৪</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--gray); font-size: 0.875rem;">
+                            <i class="far fa-clock"></i> ১২ মিনিট
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-card">
+                <div class="blog-image">🎹</div>
+                <div class="blog-body">
+                    <span class="blog-category" style="background: #f59e0b;">র‍্যাঙ্কিং</span>
+                    <h2 class="blog-title">
+                        <a href="#">উত্তরবঙ্গের টপ ১০ ব্যান্ড যাদের চেনা উচিত</a>
+                    </h2>
+                    <p class="blog-excerpt">
+                        উত্তরবঙ্গে রয়েছে অসংখ্য প্রতিভাবান ব্যান্ড। তাদের মধ্যে কিছু ব্যান্ড নিজেদের অনন্য সুরে এবং গানের মাধ্যমে মানুষের হৃদয় জয় করে নিয়েছে। এই তালিকায় রয়েছে রক, মেটাল, ফিউশন সহ বিভিন্ন ঘরানার ব্যান্ড...
+                    </p>
+                    <div class="blog-footer">
+                        <div class="blog-author">
+                            <div class="author-avatar">M</div>
+                            <div>
+                                <div style="font-weight: 600;">মাহমুদ আলম</div>
+                                <div class="blog-date">৫ জানুয়ারি, ২০২৪</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--gray); font-size: 0.875rem;">
+                            <i class="far fa-clock"></i> ৮ মিনিট
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 5 -->
+            <article class="blog-card">
+                <div class="blog-image">🎧</div>
+                <div class="blog-body">
+                    <span class="blog-category" style="background: #ef4444;">মতামত</span>
+                    <h2 class="blog-title">
+                        <a href="#">ব্যান্ড সঙ্গীত: শুধু বিনোদন নয়, একটি আন্দোলন</a>
+                    </h2>
+                    <p class="blog-excerpt">
+                        ব্যান্ড সঙ্গীত কখনো শুধু বিনোদন ছিল না। এটি সামাজিক পরিবর্তনের হাতিয়ার, যুব সমাজের কণ্ঠস্বর। ৯০ এর দশকে ব্যান্ড সঙ্গীত বাংলাদেশে নতুন মাত্রা যোগ করেছিল। আজও নতুন প্রজন্মের ব্যান্ডগুলো গান দিয়ে তুলে ধরছে সমাজের নানা সমস্যা...
+                    </p>
+                    <div class="blog-footer">
+                        <div class="blog-author">
+                            <div class="author-avatar">R</div>
+                            <div>
+                                <div style="font-weight: 600;">রাফি করিম</div>
+                                <div class="blog-date">১ জানুয়ারি, ২০২৪</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--gray); font-size: 0.875rem;">
+                            <i class="far fa-clock"></i> ৬ মিনিট
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 6 -->
+            <article class="blog-card">
+                <div class="blog-image">🎵</div>
+                <div class="blog-body">
+                    <span class="blog-category" style="background: #8b5cf6;">ইন্টারভিউ</span>
+                    <h2 class="blog-title">
+                        <a href="#">স্থানীয় ব্যান্ড শিল্পীদের সাথে একান্ত আলাপচারিতা</a>
+                    </h2>
+                    <p class="blog-excerpt">
+                        উত্তরবঙ্গের জনপ্রিয় ব্যান্ডগুলোর সদস্যদের সাথে বিশেষ সাক্ষাৎকার। তাদের সংগ্রাম, সাফল্য, স্বপ্ন এবং ভবিষ্যৎ পরিকল্পনা নিয়ে খোলামেলা আলোচনা। জানুন কিভাবে তারা পৌঁছেছেন সফলতার শিখরে...
+                    </p>
+                    <div class="blog-footer">
+                        <div class="blog-author">
+                            <div class="author-avatar">T</div>
+                            <div>
+                                <div style="font-weight: 600;">তানভীর ইসলাম</div>
+                                <div class="blog-date">২৮ ডিসেম্বর, ২০২৩</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--gray); font-size: 0.875rem;">
+                            <i class="far fa-clock"></i> ১৫ মিনিট
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <!-- About Widget -->
+            <div class="widget about-widget">
+                <img src="logo55.jpg" alt="NBBMFC">
+                <h3>NBBMFC</h3>
+                <p style="color: var(--gray); line-height: 1.7;">
+                    উত্তরবঙ্গের ব্যান্ড সঙ্গীত প্রেমীদের সবচেয়ে বড় কমিউনিটি। আমরা একসাথে গড়ছি সঙ্গীতময় ভবিষ্যৎ।
+                </p>
+                <a href="https://www.facebook.com/profile.php?id=100063758481314" target="_blank" class="btn-read" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.7rem 1.5rem;">
+                    <i class="fab fa-facebook"></i> Join Us
+                </a>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="widget">
+                <h3 class="widget-title">ক্যাটাগরি</h3>
+                <ul class="category-list">
+                    <li>
+                        <a href="#"><i class="fas fa-music"></i> ব্যান্ড নিউজ</a>
+                        <span class="category-count">১৫</span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-calendar-alt"></i> কনসার্ট</a>
+                        <span class="category-count">১২</span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-guitar"></i> ইন্টারভিউ</a>
+                        <span class="category-count">৮</span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-book"></i> টিউটোরিয়াল</a>
+                        <span class="category-count">২০</span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-star"></i> রিভিউ</a>
+                        <span class="category-count">১০</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Recent Posts Widget -->
+            <div class="widget">
+                <h3 class="widget-title">সাম্প্রতিক পোস্ট</h3>
+                
+                <div class="recent-post">
+                    <div class="recent-thumb">🎸</div>
+                    <div class="recent-info">
+                        <h4><a href="#">নতুন ব্যান্ড আবিষ্কার করুন</a></h4>
+                        <span><i class="far fa-calendar"></i> ২৩ জানুয়ারি</span>
+                    </div>
+                </div>
+
+                <div class="recent-post">
+                    <div class="recent-thumb">🎤</div>
+                    <div class="recent-info">
+                        <h4><a href="#">গিটার শেখার সহজ পদ্ধতি</a></h4>
+                        <span><i class="far fa-calendar"></i> ২০ জানুয়ারি</span>
+                    </div>
+                </div>
+
+                <div class="recent-post">
+                    <div class="recent-thumb">🥁</div>
+                    <div class="recent-info">
+                        <h4><a href="#">ড্রাম বিটস মাস্টার করুন</a></h4>
+                        <span><i class="far fa-calendar"></i> ১৮ জানুয়ারি</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tags Widget -->
+            <div class="widget">
+                <h3 class="widget-title">ট্যাগস</h3>
+                <div class="tags">
+                    <a href="#" class="tag">#ব্যান্ডসঙ্গীত</a>
+                    <a href="#" class="tag">#উত্তরবঙ্গ</a>
+                    <a href="#" class="tag">#রক</a>
+                    <a href="#" class="tag">#কনসার্ট</a>
+                    <a href="#" class="tag">#লোকালব্যান্ড</a>
+                    <a href="#" class="tag">#মিউজিক</a>
+                    <a href="#" class="tag">#গিটার</a>
+                    <a href="#" class="tag">#ড্রামস</a>
+                    <a href="#" class="tag">#লাইভশো</a>
+                </div>
+            </div>
+
+            <!-- Newsletter Widget -->
+            <div class="widget" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+                <h3 class="widget-title" style="color: white;">নিউজলেটার</h3>
+                <p style="margin-bottom: 1rem; opacity: 0.95;">সাবস্ক্রাইব করুন এবং পান সব আপডেট সরাসরি ইমেইলে</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="আপনার ইমেইল" required style="background: rgba(255,255,255,0.2); color: white; border-color: rgba(255,255,255,0.3);">
+                    <button type="submit" class="btn-subscribe" style="background: white; color: var(--primary-color);">
+                        <i class="fas fa-paper-plane"></i> সাবস্ক্রাইব করুন
+                    </button>
+                </form>
+            </div>
+
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NBBMFC সম্পর্কে</h3>
+                <p>North Bengal Band Music Fans Community - উত্তরবঙ্গের সবচেয়ে বড় ব্যান্ড মিউজিক কমিউনিটি। আমরা প্রচার করি স্থানীয় প্রতিভা এবং সংগীত সংস্কৃতি।</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100063758481314" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>দ্রুত লিংক</h3>
+                <a href="#">হোম</a>
+                <a href="#">ব্লগ</a>
+                <a href="#">ইভেন্ট</a>
+                <a href="#">কমিউনিটি</a>
+                <a href="#">যোগাযোগ</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>ক্যাটাগরি</h3>
+                <a href="#">ব্যান্ড নিউজ</a>
+                <a href="#">কনসার্ট</a>
+                <a href="#">ইন্টারভিউ</a>
+                <a href="#">টিউটোরিয়াল</a>
+                <a href="#">রিভিউ</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>যোগাযোগ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> উত্তরবঙ্গ, বাংলাদেশ</p>
+                <p><i class="fas fa-envelope"></i> contact@nbbmfc.com</p>
+                <p><i class="fas fa-phone"></i> +880 1XXX-XXXXXX</p>
+                <p><i class="fab fa-facebook"></i> fb.com/nbbmfc</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 NBBMFC - North Bengal Band Music Fans Community. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem;">Designed with ❤️ for Music Lovers</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                menuToggle.querySelector('i').classList.remove('fa-times');
+                menuToggle.querySelector('i').classList.add('fa-bars');
+            }
+        });
+    </script>
+
+</body>
+</html>
