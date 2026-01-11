@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangla Song Appreciation - BSA | Celebrating Bengali Music</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="bsalogo.jpg" alt="BSA Logo" class="h-12 w-12 rounded-full object-cover border-2 border-gray-200">
+                    <div>
+                        <span class="text-lg font-bold block leading-tight">BSA</span>
+                        <span class="text-xs text-gray-500">Est. 2014</span>
+                    </div>
+                </a>
+                <ul class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                    <li><a href="#home" class="hover:text-black transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-black transition">About</a></li>
+                    <li><a href="#whatwedo" class="hover:text-black transition">What We Do</a></li>
+                    <li><a href="#mission" class="hover:text-black transition">Mission</a></li>
+                    <li><a href="#trademark" class="hover:text-black transition">Trademark</a></li>
+                    <li><a href="#contact" class="hover:text-black transition">Contact</a></li>
+                </ul>
+                <button id="menuBtn" class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 space-y-3 border-t border-gray-100 pt-4">
+                <a href="#home" class="block text-gray-600 hover:text-black py-2">Home</a>
+                <a href="#about" class="block text-gray-600 hover:text-black py-2">About</a>
+                <a href="#whatwedo" class="block text-gray-600 hover:text-black py-2">What We Do</a>
+                <a href="#mission" class="block text-gray-600 hover:text-black py-2">Mission</a>
+                <a href="#trademark" class="block text-gray-600 hover:text-black py-2">Trademark</a>
+                <a href="#contact" class="block text-gray-600 hover:text-black py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Logo Focused -->
+    <section id="home" class="pt-32 pb-24 px-6 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-5xl mx-auto text-center">
+            <!-- Main Logo -->
+            <div class="mb-10">
+                <img src="bsalogo.jpg" alt="Bangla Song Appreciation" class="w-48 h-48 md:w-64 md:h-64 rounded-full mx-auto object-cover shadow-2xl border-4 border-white ring-4 ring-gray-100">
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
+                Bangla Song Appreciation
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-500 mb-6 font-light">
+                বাংলা গানের প্রতি ভালোবাসা
+            </p>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+                A registered community dedicated to celebrating, preserving, and promoting the rich cultural heritage of Bengali music across all genres and generations.
+            </p>
+            
+            <!-- Badges -->
+            <div class="flex flex-wrap justify-center gap-4 mb-10">
+                <div class="inline-flex items-center space-x-2 px-5 py-2.5 bg-gray-100 rounded-full text-sm">
+                    <i class="fas fa-certificate text-green-600"></i>
+                    <span class="text-gray-700 font-medium">Registered Trademark</span>
+                </div>
+                <div class="inline-flex items-center space-x-2 px-5 py-2.5 bg-gray-100 rounded-full text-sm">
+                    <i class="fas fa-calendar text-blue-600"></i>
+                    <span class="text-gray-700 font-medium">Since 2014</span>
+                </div>
+                <div class="inline-flex items-center space-x-2 px-5 py-2.5 bg-gray-100 rounded-full text-sm">
+                    <i class="fas fa-music text-purple-600"></i>
+                    <span class="text-gray-700 font-medium">Music Community</span>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#about" class="px-8 py-3.5 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition">
+                    Learn More About Us
+                </a>
+                <a href="#contact" class="px-8 py-3.5 border-2 border-gray-300 rounded-lg font-medium hover:border-black transition">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 px-6 bg-black text-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold mb-2">10+</div>
+                    <div class="text-gray-400 text-sm">Years Active</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold mb-2">2014</div>
+                    <div class="text-gray-400 text-sm">Established</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold mb-2">TM</div>
+                    <div class="text-gray-400 text-sm">Registered</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold mb-2">BD</div>
+                    <div class="text-gray-400 text-sm">Bangladesh Based</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Detailed -->
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">About Us</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">Who We Are</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Bangla Song Appreciation (BSA) is more than just a community — it's a movement dedicated to honoring the timeless beauty of Bengali music and the artists who create it.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="bsalogo.jpg" alt="BSA Community" class="w-full max-w-md mx-auto rounded-2xl shadow-xl">
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold">Our Story</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Founded in 2014, Bangla Song Appreciation started as a small group of passionate music lovers who wanted to create a space where Bengali songs could be celebrated, discussed, and shared with the world.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Over the years, we have grown into a recognized community with an official trademark registration under the Department of Patents, Designs and Trademarks (DPDT), Bangladesh. Our trademark number <strong>193586</strong> stands as a testament to our legitimacy and commitment.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Under the leadership of <strong>Aheen Afnan</strong>, President of BSA, we continue to expand our reach and impact in the Bengali music scene, connecting artists, listeners, and enthusiasts from all walks of life.
+                    </p>
+                    <div class="pt-4">
+                        <a href="#whatwedo" class="inline-flex items-center space-x-2 text-black font-semibold hover:underline">
+                            <span>Discover What We Do</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section - Detailed -->
+    <section id="whatwedo" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Our Work</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">What We Do</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    BSA focuses on various aspects of Bengali music — from appreciation and promotion to preservation and community building. Here's how we contribute to the music scene.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-music text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Music Appreciation</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        We celebrate Bengali songs across all genres — from classical Rabindra Sangeet and Nazrul Geeti to modern pop, rock, folk, and band music. Every song has a story, and we help tell it.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Community Building</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        We bring together music lovers, artists, composers, and lyricists under one roof. Our community provides a platform for meaningful discussions, collaborations, and connections.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-microphone-alt text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Artist Promotion</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        We support both emerging and established Bengali artists by promoting their work, sharing their music, and helping them reach a wider audience through our platform.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-2xl text-red-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cultural Preservation</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Bengali music is a treasure of our culture. We work to preserve rare and classic songs, ensuring that future generations can experience the beauty of our musical heritage.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-star text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Song Reviews & Analysis</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        We provide thoughtful reviews and in-depth analysis of Bengali songs — exploring lyrics, composition, melody, and the emotions they evoke in listeners.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-share-alt text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Sharing</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Through our platforms, we share curated playlists, song recommendations, artist spotlights, and music-related content to keep our community engaged and informed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Genres Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Genres We Cover</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">All Genres of Bengali Music</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    From the soulful melodies of Rabindranath Tagore to the energetic beats of modern bands, we appreciate every form of Bengali music.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-gray-100 transition">
+                    <i class="fas fa-om text-2xl text-orange-500 mb-3"></i>
+                    <h4 class="font-semibold">Rabindra Sangeet</h4>
+                    <p class="text-gray-500 text-xs mt-1">Songs of Tagore</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-gray-100 transition">
+                    <i class="fas fa-fire text-2xl text-red-500 mb-3"></i>
+                    <h4 class="font-semibold">Nazrul Geeti</h4>
+                    <p class="text-gray-500 text-xs mt-1">Songs of Nazrul</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-gray-100 transition">
+                    <i class="fas fa-leaf text-2xl text-green-600 mb-3"></i>
+                    <h4 class="font-semibold">Folk Music</h4>
+                    <p class="text-gray-500 text-xs mt-1">Baul, Bhatiali & more</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-gray-100 transition">
+                    <i class="fas fa-guitar text-2xl text-purple-600 mb-3"></i>
+                    <h4 class="font-semibold">Band Music</h4>
+                    <p class="text-gray-500 text-xs mt-1">Rock, Pop & Alternative</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-gray-100 transition">
+                    <i class="fas fa-compact-disc text-2xl text-blue-500 mb-3"></i>
+                    <h4 class="font-semibold">Modern Pop</h4>
+                    <p class="text-gray-500 text-xs mt-1">Contemporary hits</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-gray-100 transition">
+                    <i class="fas fa-film text-2xl text-pink-500 mb-3"></i>
+                    <h4 class="font-semibold">Film Songs</h4>
+                    <p class="text-gray-500 text-xs mt-1">Cinema music</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-gray-100 transition">
+                    <i class="fas fa-pray text-2xl text-teal-500 mb-3"></i>
+                    <h4 class="font-semibold">Devotional</h4>
+                    <p class="text-gray-500 text-xs mt-1">Spiritual songs</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-gray-100 transition">
+                    <i class="fas fa-child text-2xl text-yellow-500 mb-3"></i>
+                    <h4 class="font-semibold">Children's Songs</h4>
+                    <p class="text-gray-500 text-xs mt-1">Chhorar gaan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section id="mission" class="py-24 px-6 bg-black text-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Our Purpose</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3">Mission & Vision</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div class="bg-white/5 p-10 rounded-2xl border border-white/10">
+                    <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        To create a vibrant and inclusive community where Bengali music is celebrated, appreciated, and shared. We aim to:
+                    </p>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span>Promote Bengali songs and artists globally</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span>Connect music lovers through meaningful engagement</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span>Preserve the rich heritage of Bengali music</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span>Support emerging artists and musicians</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-white/5 p-10 rounded-2xl border border-white/10">
+                    <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        To become the leading platform for Bengali music appreciation worldwide. We envision a future where:
+                    </p>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-star text-yellow-400 mt-1"></i>
+                            <span>Bengali music reaches every corner of the world</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-star text-yellow-400 mt-1"></i>
+                            <span>Artists receive the recognition they deserve</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-star text-yellow-400 mt-1"></i>
+                            <span>Music becomes a bridge connecting generations</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-star text-yellow-400 mt-1"></i>
+                            <span>Our cultural heritage thrives for centuries</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">What Drives Us</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">Our Core Values</h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-2xl text-red-500"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">Passion</h4>
+                    <p class="text-gray-500 text-sm">Deep love for Bengali music and culture</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-2xl text-blue-500"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">Respect</h4>
+                    <p class="text-gray-500 text-sm">Honoring all artists and their contributions</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl text-green-500"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">Community</h4>
+                    <p class="text-gray-500 text-sm">Building connections through music</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-gem text-2xl text-purple-500"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">Authenticity</h4>
+                    <p class="text-gray-500 text-sm">Staying true to our roots</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trademark Section - Detailed -->
+    <section id="trademark" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Legal Registration</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">Official Trademark</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Bangla Song Appreciation is a registered trademark under the Department of Patents, Designs and Trademarks (DPDT), Ministry of Industries, Government of Bangladesh.
+                </p>
+            </div>
+
+            <!-- Certificate Preview -->
+            <div class="bg-white p-8 md:p-12 rounded-2xl border border-gray-200 shadow-lg mb-8">
+                <div class="text-center mb-8">
+                    <img src="bsalogo.jpg" alt="BSA" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-gray-200">
+                    <h3 class="text-xl font-bold">Certificate of Registration</h3>
+                    <p class="text-gray-500 text-sm">Trademark Registration - Bangladesh</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Left Column -->
+                    <div class="space-y-4">
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Brand Name</span>
+                            <span class="font-semibold text-right">Bangla Song Appreciation</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Short Name</span>
+                            <span class="font-semibold">BSA</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Trademark No.</span>
+                            <span class="font-bold text-lg">193586</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Class</span>
+                            <span class="font-semibold">35 — Business Management</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Status</span>
+                            <span class="inline-flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="font-bold text-green-600">Registered</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="space-y-4">
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Owner</span>
+                            <span class="font-semibold">Aheen Afnan</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Designation</span>
+                            <span class="font-semibold">President, BSA</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Registration Date</span>
+                            <span class="font-semibold">09/09/2014</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Effective From</span>
+                            <span class="font-semibold">09/09/2014</span>
+                        </div>
+                        <div class="flex justify-between py-3 border-b border-gray-100">
+                            <span class="text-gray-500">Valid Until</span>
+                            <span class="font-bold text-blue-600">09/09/2029</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Details -->
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold mb-2 text-gray-700">Issuing Authority</h4>
+                            <p class="text-gray-600 text-sm">
+                                Department of Patents, Designs and Trademarks (DPDT)<br>
+                                Ministry of Industries<br>
+                                Government of Bangladesh
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2 text-gray-700">Registered Address</h4>
+                            <p class="text-gray-600 text-sm">
+                                Maksum Mansion<br>
+                                127, Motijheel C/A (4th floor), Room #32<br>
+                                Dhaka-1000, Bangladesh
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Validity Info -->
+                <div class="mt-8 p-6 bg-blue-50 rounded-xl">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-info-circle text-blue-500 text-xl mt-0.5"></i>
+                        <div>
+                            <h4 class="font-semibold text-blue-800 mb-1">Validity Information</h4>
+                            <p class="text-blue-700 text-sm">
+                                This trademark is valid for 15 years from the registration date (until approximately 09/09/2029). It is renewable for further 10-year periods thereafter as per the Trademarks Act, 2009 of Bangladesh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="p-6 bg-yellow-50 rounded-xl border border-yellow-200">
+                <div class="flex items-start space-x-4">
+                    <i class="fas fa-exclamation-triangle text-yellow-600 text-xl mt-0.5"></i>
+                    <div>
+                        <h4 class="font-semibold text-yellow-800 mb-1">Important Notice</h4>
+                        <p class="text-yellow-700 text-sm">
+                            This certificate is for informational purposes only. It is not valid for legal proceedings or for obtaining registration abroad. For official verification or renewal guidance, please contact DPDT (Bangladesh) directly. Keep the original certificate safely preserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Get In Touch</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">Contact Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Have questions about Bangla Song Appreciation? Want to collaborate or learn more about our community? We'd love to hear from you.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-red-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1">Address</h4>
+                            <p class="text-gray-600 text-sm">
+                                Maksum Mansion, 127, Motijheel C/A<br>
+                                (4th floor), Room #32<br>
+                                Dhaka-1000, Bangladesh
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1">Email</h4>
+                            <p class="text-gray-600 text-sm">contact@banglasongappreciation.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-clock text-green-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1">Active Since</h4>
+                            <p class="text-gray-600 text-sm">September 9, 2014</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h4 class="font-bold mb-6">Connect With Us</h4>
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center space-x-4 p-4 bg-white rounded-xl border border-gray-200 hover:border-gray-400 transition">
+                            <i class="fab fa-facebook-f text-blue-600 text-xl w-6"></i>
+                            <span class="font-medium">Facebook</span>
+                            <i class="fas fa-arrow-right text-gray-400 ml-auto"></i>
+                        </a>
+                        <a href="#" class="flex items-center space-x-4 p-4 bg-white rounded-xl border border-gray-200 hover:border-gray-400 transition">
+                            <i class="fab fa-youtube text-red-600 text-xl w-6"></i>
+                            <span class="font-medium">YouTube</span>
+                            <i class="fas fa-arrow-right text-gray-400 ml-auto"></i>
+                        </a>
+                        <a href="#" class="flex items-center space-x-4 p-4 bg-white rounded-xl border border-gray-200 hover:border-gray-400 transition">
+                            <i class="fab fa-instagram text-pink-600 text-xl w-6"></i>
+                            <span class="font-medium">Instagram</span>
+                            <i class="fas fa-arrow-right text-gray-400 ml-auto"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="bsalogo.jpg" alt="BSA" class="h-14 w-14 rounded-full object-cover border-2 border-gray-700">
+                        <div>
+                            <span class="text-xl font-bold block">Bangla Song Appreciation</span>
+                            <span class="text-gray-500 text-sm">Celebrating Bengali Music</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-md">
+                        A registered community dedicated to appreciating, preserving, and promoting the rich cultural heritage of Bengali music across all genres and generations since 2014.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#whatwedo" class="hover:text-white transition">What We Do</a></li>
+                        <li><a href="#trademark" class="hover:text-white transition">Trademark</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li>Trademark No. 193586</li>
+                        <li>Class 35 - Business Management</li>
+                        <li>Registered: 09/09/2014</li>
+                        <li>Valid Until: 09/09/2029</li>
+                        <li>DPDT, Bangladesh</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        © 2014 - 2026 Bangla Song Appreciation. All Rights Reserved.
+                    </p>
+                    <p class="text-gray-600 text-xs">
+                        Last updated: 11/01/2026 | Designed with love for Bengali music
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-black text-white rounded-full shadow-lg hidden hover:bg-gray-800 transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                    mobileMenu.classList.add('hidden');
+                    const icon = menuBtn.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            });
+        });
+
+        // Navbar shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
